@@ -9,11 +9,11 @@ class EnvironmentSpace:
         self.startingNode.addChild(node)
 
     def printTree(self):
-        self.printTree(self.startingNode)
+        self.printTreeTraversal(self.startingNode)
 
-    def printTree(self, node):
+    def printTreeTraversal(self, node):
         if node.left != None:
-            self.printTree(node.left)
+            self.printTreeTraversal(node.left)
         elif node.right != None:
-            self.printTree(node.right)
+            self.printTreeTraversal(node.right)
         print("Pressure:", node.pressure)
