@@ -1,5 +1,9 @@
 # LOXValveTesting
 
+This project was inspired by the liquid bipropellant rocket engine in the Saturn V rocket. I focused on developing a test for the main Liquid Oxygen Valve, so here is a video of how I think the valve operates based on the Engine manual:
+https://drive.google.com/file/d/1e4KaUaL7RqEZWFsBp6MMhwI2yefwOBes/view?usp=sharing
+
+
 TODO Project Description 
 
 ## System Overview
@@ -9,3 +13,6 @@ Broadly, the test manager will communicate with a simulated LOX valve (which per
 ## Class Diagram
 
 TODO Class diagrm
+
+Link to the F1 Engine Manual referenced:
+https://www.pdf-archive.com/2016/10/21/rocketdyne-f1-engine-manual/rocketdyne-f1-engine-manual.pdf
