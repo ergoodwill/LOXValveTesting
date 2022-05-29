@@ -1,6 +1,6 @@
 class LOXValveConnection:
-    def __init__(self):
-        pass
+    #TODO: Establish connection and measure flow rate
 
     def measureFlowRate(self):
-        pass
+        #TODO
+        return 2

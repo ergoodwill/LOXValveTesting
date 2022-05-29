@@ -1,3 +1,5 @@
+import numpy as np
+
 from SimulatedLOXValve import SimulatedLOXValve
 from LOXValveConnection import LOXValveConnection
 class TestManager:
@@ -12,4 +14,5 @@ class TestManager:
         while self.pressureDiff < self.endingPressureDiff:
             predictedFlowRate = self.simValve.calculateFlowRate(self.pressureDiff)
             realFlowRate = self.connection.measureFlowRate()
+            print(np.absolute(predictedFlowRate-realFlowRate))
             self.pressureDiff += 0.2
