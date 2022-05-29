@@ -1,9 +1,15 @@
-from EnvironmentSpace import EnvironmentSpace
-
+from SimulatedLOXValve import SimulatedLOXValve
+from LOXValveConnection import LOXValveConnection
 class TestManager:
-    def __init__(self, startingPressure):
-        self.startingPressure = startingPressure
-        self.environmentSpace = EnvironmentSpace(startingPressure)
+    def __init__(self, startingPressureDiff, endingPressureDiff):
+        self.startingPressureDiff = startingPressureDiff
+        self.endingPressureDiff = endingPressureDiff
+        self.pressureDiff = startingPressureDiff
+        self.simValve = SimulatedLOXValve()
+        self.connection = LOXValveConnection()
 
-    def showEnvironmentSpace(self):
-        self.environmentSpace.printTree()
+    def runTest(self):
+        while self.pressureDiff < self.endingPressureDiff:
+            predictedFlowRate = self.simValve.calculateFlowRate(self.pressureDiff)
+            realFlowRate = self.connection.measureFlowRate()
+            self.pressureDiff += 0.2
