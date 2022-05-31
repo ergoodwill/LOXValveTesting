@@ -15,4 +15,5 @@ class Plotter:
     def plot(self):
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
-        # ax.plot3D(self.pressureDiffList, self.pressureList, self.errorList, cmap='Greens');
+        ax.plot3D(self.pressureDiffList, self.pressureList, self.errorList)
+        plt.show()
