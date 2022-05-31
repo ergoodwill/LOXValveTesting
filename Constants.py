@@ -1,8 +1,8 @@
-#Specific gravity of liquid oxygen
+# Specific gravity of liquid oxygen
 LOX_SG = 1.14
-#Flow rate of LOX in F1 engine
+# Flow rate of LOX in F1 engine
 F1_FLOWRATE = 24810
-#Working pressure drop across LOX valve in F1 engine
+# Working pressure drop across LOX valve in F1 engine
 F1_PRESSDROP = 5
-#Connection URL of websocket, would provide connection to actual LOX valve
-CONNECTION_URL= "ws://echo.websocket.events/"
+# Connection URL of websocket, would provide connection to actual LOX valve
+CONNECTION_URL = "ws://echo.websocket.events/"

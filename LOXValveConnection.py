@@ -1,8 +1,10 @@
 import Constants
 import websocket
 
+
 class LOXValveConnection:
-    def establishConnection(self):
+    @staticmethod
+    def establishConnection():
         websocket.enableTrace(True)
         ws = websocket.WebSocket()
         ws.connect(Constants.CONNECTION_URL)
@@ -10,6 +12,8 @@ class LOXValveConnection:
         print(ws.recv())
         ws.close()
 
-    def measureFlowRate(self, pressureDiff, pressure):
-        #TODO:
+    @staticmethod
+    def measureFlowRate(pressureDiff, pressure):
+        # TODO: send pressureDiff and pressure via ws to LOX valve and receive flow rate in response from ws,
+        #  return this
         return 2
