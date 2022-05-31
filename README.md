@@ -22,7 +22,7 @@ Broadly, the test manager will communicate with a simulated LOX valve (which per
 
 ## Class Diagrams
 
-TODO Class diagrm
+![Class Diagrams LOXValveTesting](https://user-images.githubusercontent.com/35115515/171091543-a1de5a0f-710a-492f-a343-548c24f24726.png)
 
 
 # Resources Used for Learning about LREs
