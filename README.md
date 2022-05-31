@@ -14,7 +14,9 @@ Currently, this project has a websocket client that is set up and ready to conne
 This project assumes that the flow of liquid through the valve is laminar.
 
 ## System Overview
-TODO: Fix System Overview diagram
+
+![LOX Valve Testing Overview](https://user-images.githubusercontent.com/35115515/171089675-2fb067ec-056d-4114-bcde-b4ce933fcaa7.png)
+
 
 Broadly, the test manager will communicate with a simulated LOX valve (which performs nominally) and a real LOX valve by giving environmental configuration data from the environment space. The test manager will compare the behavior of the simulated LOX valve and the real LOX valve given the environmental configuration and use this information to produce a model of the risk/performance of the real LOX valve given several environmental parameters.
 
