@@ -1,6 +1,7 @@
 import numpy as np
 from SimulatedLOXValve import SimulatedLOXValve
 from LOXValveConnection import LOXValveConnection
+from WSServer import WSServer
 from Plotter import Plotter
 
 class TestManager:
@@ -15,6 +16,10 @@ class TestManager:
 
         self.simValve = SimulatedLOXValve()
         self.connection = LOXValveConnection()
+        self.connection.establishConnection()
+
+        self.server = WSServer()
+        self.server.establishServer()
 
         self.plotter = Plotter()
 
