@@ -7,7 +7,7 @@ This project compares the predicted flow rate vs. measured flow rate of the afor
 
 <img width="355" alt="3D plot example" src="https://user-images.githubusercontent.com/35115515/171088854-00e071b4-8776-48e0-b868-270b5b7756d1.png">
 
-Note: the data above is not realistic given I do not currently have the hardware to run such a test, so the "real" data is synthetic in this case.
+Note: the data above is not realistic given I do not currently have the hardware to run such a test, so the "measured" data is synthetic in this case.
 
 Currently, this project has a websocket client that is set up and ready to connect to a server that will give the client flowrates from the actual valve; however, I do not have the hardware to actually run this test. If I had access to a poppet valve, I would adjust the constants to a low-fidelity setup (e.g. using water instead of LOX) and use an Arduino ESP32 to host a websocket server that would give the client the necessary information.
 
